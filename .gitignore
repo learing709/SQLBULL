@@ -1,0 +1,41 @@
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# C/C++ build outputs
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.exe
+*.a
+*.lib
+CMakeFiles/
+cmake-build-*/
+
+# AFL includes tiny static archives as intentional decompression test cases.
+!**/AFL/testcases/archives/**/*.a
+
+# Coverage, profiling, and crash artifacts
+*.gcda
+*.gcno
+*.profraw
+*.profdata
+core
+core.*
+vgcore.*
